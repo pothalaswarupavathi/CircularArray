@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.util.*;
+
+public class ArrayShiftingC {
+	public static void main(String args[]) {
+		Scanner in=new Scanner(System.in);
+		int n=in.nextInt();
+		List<Integer> a=new ArrayList<Integer>();
+		for(int i=0;i<n;i++) {
+			a.add(in.nextInt());
+		}
+		List<Integer> b=new ArrayList();
+		
+		
+		for(Integer c:a) {
+			b.add(c);
+		}
+		
+			b.add(0,b.remove(b.size()-1));
+		
+		
+		for(int l:b) {
+			System.out.print(l+" ");
+			
+		}
+	}
+
+}
